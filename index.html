@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dental Avenue – Aesthetic &amp; Family Dentistry, Sambrial Sialkot</title>
+<meta name="description" content="Dental Avenue, Sambrial, Sialkot. Gentle, modern dentistry and smile design. Book on WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f4f7f6; --surface:#ffffff; --ink:#14262c; --muted:#57696d; --line:#d5e0dd;
+  --sage:#7fa79f; --sage-deep:#2f5d58; --blush:#ecd4cc; --btn:#14262c; --btn-ink:#f4f7f6;
+  color-scheme:light;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0f1d21; --surface:#16282d; --ink:#eef4f2; --muted:#a3b6b3; --line:#27403f;
+    --sage:#8fb8af; --sage-deep:#a9d0c7; --blush:#4a3a38; --btn:#eef4f2; --btn-ink:#0f1d21;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0f1d21; --surface:#16282d; --ink:#eef4f2; --muted:#a3b6b3; --line:#27403f;
+  --sage:#8fb8af; --sage-deep:#a9d0c7; --blush:#4a3a38; --btn:#eef4f2; --btn-ink:#0f1d21; color-scheme:dark;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:5rem}
+body{background:var(--bg);color:var(--ink);font-family:Figtree,system-ui,-apple-system,"Segoe UI",sans-serif;font-size:1.0625rem;line-height:1.65;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:"Instrument Serif",Georgia,"Times New Roman",serif;font-weight:400;line-height:1.05;letter-spacing:-.01em}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--sage-deep);outline-offset:3px;border-radius:4px}
+.wrap{max-width:68rem;margin:0 auto;padding:0 1.5rem}
+header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:4rem}
+.logo{font-family:"Instrument Serif",Georgia,serif;font-size:1.5rem;text-decoration:none}
+.logo i{color:var(--sage-deep)}
+nav{display:flex;gap:1.75rem;align-items:center;font-size:.95rem}
+nav a{text-decoration:none;color:var(--muted)}
+nav a:hover{color:var(--ink)}
+.btn{display:inline-block;background:var(--btn);color:var(--btn-ink);padding:.8rem 1.5rem;border-radius:999px;text-decoration:none;font-weight:500;border:0;font:inherit;font-weight:500;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--ink)}
+nav .btn{padding:.5rem 1.1rem;color:var(--btn-ink)}
+@media(max-width:700px){nav a:not(.btn){display:none}}
+
+.hero{padding:5rem 0 3rem;position:relative;overflow:hidden}
+.hero h1{font-size:clamp(3.2rem,9vw,7rem);max-width:12ch}
+.hero h1 em{color:var(--sage-deep)}
+.hero p{max-width:34rem;color:var(--muted);margin:1.75rem 0 2.25rem;font-size:1.15rem}
+.cta{display:flex;gap:.9rem;flex-wrap:wrap}
+.smile{display:block;width:100%;height:auto;margin-top:3rem;color:var(--sage)}
+.smile path{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-dasharray:1400;stroke-dashoffset:1400;animation:draw 2.4s .3s ease-out forwards}
+.smile .teeth{stroke-width:1;opacity:.55;stroke-dasharray:none;stroke-dashoffset:0;animation:none}
+@keyframes draw{to{stroke-dashoffset:0}}
+@media(prefers-reduced-motion:reduce){.smile path{animation:none;stroke-dashoffset:0}html{scroll-behavior:auto}}
+.facts{display:flex;gap:2.5rem;flex-wrap:wrap;border-top:1px solid var(--line);padding:1.5rem 0;color:var(--muted);font-size:.95rem}
+.facts b{display:block;color:var(--ink);font-weight:500}
+
+section{padding:5.5rem 0}
+section h2{font-size:clamp(2.2rem,5vw,3.4rem);max-width:16ch;margin-bottom:1rem}
+.lede{color:var(--muted);max-width:36rem;margin-bottom:2.5rem}
+.tx{list-style:none;padding:0;border-top:1px solid var(--line)}
+.tx li{display:grid;grid-template-columns:minmax(9rem,1fr) 2fr;gap:1.5rem;padding:1.4rem 0;border-bottom:1px solid var(--line)}
+.tx h3{font-size:1.75rem}
+.tx p{color:var(--muted)}
+@media(max-width:640px){.tx li{grid-template-columns:1fr;gap:.3rem}}
+
+.band{background:var(--surface);border-block:1px solid var(--line)}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:2.5rem}
+.cols h3{font-size:1.6rem;margin-bottom:.5rem}
+.cols p{color:var(--muted)}
+
+.ba{position:relative;aspect-ratio:16/9;max-height:26rem;width:100%;border-radius:1.25rem;overflow:hidden;border:1px solid var(--line);user-select:none}
+.ba .pane{position:absolute;inset:0;display:flex;align-items:flex-end;padding:1.25rem;font-size:.95rem}
+.ba .before{background:linear-gradient(135deg,#c9c2a8,#a9a58d);color:#2b2a22}
+.ba .after{background:linear-gradient(135deg,#ffffff,#d9ece7);color:#14262c;clip-path:inset(0 0 0 50%);justify-content:flex-end}
+.ba input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0}
+.ba .bar{position:absolute;top:0;bottom:0;left:50%;width:2px;background:#fff;pointer-events:none;box-shadow:0 0 0 1px rgba(0,0,0,.15)}
+.ba .bar::after{content:"";position:absolute;top:50%;left:50%;width:2.5rem;height:2.5rem;transform:translate(-50%,-50%);border-radius:50%;background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.25)}
+.note{margin-top:.9rem;font-size:.9rem;color:var(--muted)}
+
+.doc{display:grid;grid-template-columns:minmax(0,18rem) 1fr;gap:3rem;align-items:center}
+.portrait{aspect-ratio:4/5;border-radius:1.25rem;background:linear-gradient(160deg,var(--blush),var(--mist,#dfe9e6));border:1px solid var(--line);display:grid;place-items:center;color:var(--muted);font-size:.9rem;text-align:center;padding:1rem}
+@media(max-width:700px){.doc{grid-template-columns:1fr}.portrait{max-width:16rem}}
+.doc h2{max-width:none}
+
+form{display:grid;gap:1rem;max-width:30rem}
+label{font-size:.9rem;color:var(--muted);display:grid;gap:.35rem}
+input[type=text],input[type=tel],select{font:inherit;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:.75rem;padding:.8rem 1rem;width:100%}
+.visit{display:grid;grid-template-columns:1fr 1fr;gap:4rem}
+@media(max-width:800px){.visit{grid-template-columns:1fr;gap:3rem}}
+.info p{margin-bottom:1rem}
+.info small{color:var(--muted)}
+footer{border-top:1px solid var(--line);padding:2rem 0 3rem;color:var(--muted);font-size:.9rem}
+.wa{position:fixed;right:max(1rem,env(safe-area-inset-right,0px));bottom:calc(1rem + env(safe-area-inset-bottom,0px));z-index:30;box-shadow:0 6px 24px rgba(0,0,0,.2)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top">Dental <i>Avenue</i></a>
+    <nav aria-label="Main">
+      <a href="#treatments">Treatments</a>
+      <a href="#results">Results</a>
+      <a href="#doctor">Doctor</a>
+      <a href="#visit">Visit</a>
+      <a class="btn" href="#book">Book a visit</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<div class="wrap hero">
+  <h1>A calmer way to a <em>better smile.</em></h1>
+  <p>Gentle, modern dental care in Sambrial, Sialkot. From a simple check-up to a complete smile makeover, we explain every step before we begin.</p>
+  <div class="cta">
+    <a class="btn" href="#book">Book a consultation</a>
+    <a class="btn ghost" href="#treatments">See treatments</a>
+  </div>
+  <svg class="smile" viewBox="0 0 1000 220" role="img" aria-label="A line drawing of a smile">
+    <path class="teeth" d="M120 60 Q500 250 880 60"/>
+    <path d="M60 40 Q500 290 940 40"/>
+  </svg>
+  <div class="facts">
+    <div><b>Sambrial, Sialkot</b>Sialkot–Wazirabad Dual Carriageway</div>
+    <div><b>Book on WhatsApp</b>A reply, not a queue</div>
+    <div><b>Consultation first</b>Plan and options explained</div>
+  </div>
+</div>
+
+<section id="treatments">
+  <div class="wrap">
+    <h2>Treatments, explained plainly</h2>
+    <p class="lede">Every plan starts with a consultation, so you know what is needed, how long it takes and what it will cost before you decide.</p>
+    <ul class="tx">
+      <li><h3>Check-up and cleaning</h3><p>A thorough exam and polish to keep teeth and gums healthy, and to catch small problems early.</p></li>
+      <li><h3>Teeth whitening</h3><p>Brighter teeth in a controlled, comfortable session that protects your enamel.</p></li>
+      <li><h3>Smile design and veneers</h3><p>Shape, shade and proportion planned around your face, so the result looks like you.</p></li>
+      <li><h3>Braces and aligners</h3><p>Straighter teeth with an option that fits your routine and your budget.</p></li>
+      <li><h3>Fillings and root canal care</h3><p>Pain-managed treatment that saves your natural tooth wherever possible.</p></li>
+      <li><h3>Implants and replacements</h3><p>Natural-looking solutions for missing teeth, planned with a clear timeline.</p></li>
+    </ul>
+  </div>
+</section>
+
+<section class="band" id="approach">
+  <div class="wrap">
+    <h2>What to expect</h2>
+    <div class="cols" style="margin-top:2.5rem">
+      <div><h3>No surprises</h3><p>We show you the problem, the options and the cost first. You choose.</p></div>
+      <div><h3>Gentle by default</h3><p>Comfort comes first, and you can ask us to pause at any moment.</p></div>
+      <div><h3>Clean and careful</h3><p>Sterilised instruments and a tidy, quiet clinic you can trust.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="results">
+  <div class="wrap">
+    <h2>Results you can see</h2>
+    <p class="lede">Drag the slider to compare a case before and after treatment.</p>
+    <div class="ba" id="ba">
+      <div class="pane before">Before</div>
+      <div class="pane after" id="after">After</div>
+      <div class="bar" id="bar"></div>
+      <input type="range" min="0" max="100" value="50" id="rng" aria-label="Compare before and after">
+    </div>
+    <p class="note">Sample layout. Real patient photos (with written consent) go here.</p>
+  </div>
+</section>
+
+<section class="band" id="doctor">
+  <div class="wrap doc">
+    <div class="portrait">Doctor’s portrait<br>goes here</div>
+    <div>
+      <h2>Meet your dentist</h2>
+      <p class="lede" style="margin-bottom:1rem">People choose a dentist, not a building. Add the doctor’s name, qualifications, years of experience and a short personal note here, written in their own voice.</p>
+      <a class="btn ghost" href="#book">Book with the doctor</a>
+    </div>
+  </div>
+</section>
+
+<section id="book">
+  <div class="wrap visit">
+    <div>
+      <h2>Book your visit</h2>
+      <p class="lede">Tell us a little and we will continue on WhatsApp to confirm a time.</p>
+      <form id="f">
+        <label>Your name<input type="text" id="n" required autocomplete="name" placeholder="Full name"></label>
+        <label>Phone<input type="tel" id="p" autocomplete="tel" placeholder="03xx xxxxxxx"></label>
+        <label>What would you like help with?
+          <select id="t">
+            <option>Check-up and cleaning</option>
+            <option>Teeth whitening</option>
+            <option>Smile design and veneers</option>
+            <option>Braces and aligners</option>
+            <option>Pain or a dental problem</option>
+            <option>Not sure yet</option>
+          </select>
+        </label>
+        <button class="btn" type="submit">Continue on WhatsApp</button>
+      </form>
+    </div>
+    <div class="info" id="visit">
+      <h2>Find us</h2>
+      <p style="margin-top:1rem"><b>Dental Avenue</b><br>Sialkot–Wazirabad Dual Carriageway, opposite PSO petrol pump, Fazalpura, Sambrial, Sialkot</p>
+      <p><a class="btn ghost" href="https://maps.app.goo.gl/FpZaUo57BRX4weqG7" target="_blank" rel="noopener">Open in Google Maps</a></p>
+      <p><small>Opening hours: to be confirmed with the clinic.</small></p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">© <span id="y"></span> Dental Avenue, Sambrial, Sialkot. Treatment outcomes vary, and every plan begins with an examination.</div>
+</footer>
+
+<a class="btn wa" id="wa" href="#book">WhatsApp us</a>
+
+<script>
+// Clinic WhatsApp number (country code, no + or spaces)
+var WA_NUMBER = "923006119454";
+function wa(msg){ return "https://wa.me/" + WA_NUMBER + "?text=" + encodeURIComponent(msg); }
+document.getElementById("y").textContent = new Date().getFullYear();
+document.getElementById("wa").href = wa("Hello Dental Avenue, I’d like to book an appointment.");
+document.getElementById("f").addEventListener("submit", function(e){
+  e.preventDefault();
+  var n = document.getElementById("n").value.trim();
+  var p = document.getElementById("p").value.trim();
+  var t = document.getElementById("t").value;
+  var m = "Hello Dental Avenue, I’d like to book an appointment.\nName: " + n + (p ? "\nPhone: " + p : "") + "\nRegarding: " + t;
+  window.open(wa(m), "_blank", "noopener");
+});
+var rng = document.getElementById("rng"), after = document.getElementById("after"), bar = document.getElementById("bar");
+rng.addEventListener("input", function(){
+  after.style.clipPath = "inset(0 0 0 " + rng.value + "%)";
+  bar.style.left = rng.value + "%";
+});
+</script>
+</body>
+</html>
